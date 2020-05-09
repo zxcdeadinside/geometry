@@ -8,13 +8,13 @@ using namespace std;
 
 int main()
 {
-    double aa, yy, rad;
-    double qq, ww, rr, tt, jj, uu;
-    circle(aa, yy, rad);
-    circle_par(aa, yy, rad);
-    triangle(qq, ww, rr, tt, jj, uu);
-    triangle_par(qq, ww, rr, tt, jj, uu);
-    intersec_cir_tr(aa, yy, rad, qq, ww, rr, tt, jj, uu);
-    intersec_tr_cir(aa, yy, rad, qq, ww, rr, tt, jj, uu);
+    double x1, y1, x2, y2, x3, y3;
+    double x0, y0, rad;
+    if (triangle_par(x1, y1, x2, y2, x3, y3) == true) {
+        intersec_tr_cir(x0, y0, rad, x1, y1, x2, y2, x3, y3);
+    }
+    if (circle_par(x0, y0, rad) == true) {
+        intersec_cir_tr(x0, y0, rad, x1, y1, x2, y2, x3, y3);
+    }
     return 0;
 }

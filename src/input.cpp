@@ -25,7 +25,7 @@ int triangle_par(
 {
     double perimeter, area;
     double a, b, c, pol;
-    bool flag = false;
+    int flag = 0;
     cout << "triangle(" << x1 << " " << y1 << " " << x2 << " " << y2 << " "
          << x3 << " " << y3 << ")\n";
     a = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
@@ -39,7 +39,7 @@ int triangle_par(
         pol = (a + b + c) / 2;
         area = sqrt(pol * (pol - a) * (pol - b) * (pol - c));
         cout << "perimeter = " << perimeter << endl << "area = " << area;
-        flag = true;
+        flag = 1;
     }
 
     return flag;
@@ -48,7 +48,7 @@ int triangle_par(
 int circle_par(double& x0, double& y0, double& rad)
 {
     double perimeter, area;
-    bool flag = false;
+    int flag = 0;
     cout << "circle(" << x0 << " " << y0 << " " << rad << ")\n";
     if (rad <= 0)
         cout << "Error: invalid radius input\n" << endl;
@@ -57,7 +57,7 @@ int circle_par(double& x0, double& y0, double& rad)
         area = PI * pow(rad, 2);
 
         cout << "perimeter = " << perimeter << endl << "area = " << area;
-        flag = true;
+        flag = 1;
     }
     return flag;
 }

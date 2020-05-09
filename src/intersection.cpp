@@ -23,6 +23,7 @@ void intersec_tr_cir(
     } else {
         cout << "\nTriangle does not intersect with anything\n ";
     }
+    cout << endl;
 }
 
 void intersec_cir_tr(
@@ -45,4 +46,5 @@ void intersec_cir_tr(
     } else {
         cout << "\nCircle does not intersect with anything\n ";
     }
+    cout << endl;
 }

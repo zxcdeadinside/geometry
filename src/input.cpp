@@ -33,7 +33,7 @@ int triangle_par(
     c = sqrt((x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2));
 
     if ((a + b <= c) || (b + c <= a) || (a + c <= b)) {
-        cout << "Error: invalid triangle input" << endl;
+        cout << "Error: invalid triangle input\n" << endl;
     } else {
         perimeter = a + b + c;
         pol = (a + b + c) / 2;
@@ -50,8 +50,8 @@ int circle_par(double& x0, double& y0, double& rad)
     double perimeter, area;
     bool flag = false;
     cout << "circle(" << x0 << " " << y0 << " " << rad << ")\n";
-    if (rad < 0)
-        cout << "Error: invalid radius input" << endl;
+    if (rad <= 0)
+        cout << "Error: invalid radius input\n" << endl;
     else {
         perimeter = 2 * PI * rad;
         area = PI * pow(rad, 2);

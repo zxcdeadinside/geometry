@@ -12,7 +12,3 @@ TEST_CASE("Check entered parameters", "[input]")
     double x0 = 6, y0 = 5, rad = 2;
     REQUIRE(circle_par(x0, y0, rad) == 1);
 }
-
-TEST_CASE("Check intersections of figures", "[intersections]")
-{
-}
